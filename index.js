@@ -96,6 +96,7 @@ window.onload = function() {
 			}
 			else {
 				cvs = heroOneUnitsTd.children[t];
+				cvsCtx = cvs.getContext('2d');
 				//imgEmpty = document.getElementById('EmptyOne'+t);
 			}
 			cvs.width = Math.floor(canvas.width/FIELD_WIDTH);
@@ -182,6 +183,7 @@ window.onload = function() {
 			}
 			else {
 				cvs = heroTwoUnitsTd.children[t];
+				cvsCtx = cvs.getContext('2d');
 				//imgEmpty = document.getElementById('EmptyTwo'+t);
 			}
 			cvs.width = Math.floor(canvas.width/FIELD_WIDTH);
