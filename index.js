@@ -64,7 +64,7 @@ window.onload = function() {
 		var img = document.createElement('img');
 		img.width = "100";
 		img.height = "100";
-		img.src = "images\\"+game.heroes[selectedHero].name+".png";
+		img.src = "images/"+game.heroes[selectedHero].name+".png";
 		heroOneImgCtx.drawImage(img, 0, 0, heroOneImg.width, heroOneImg.height);
 
 		/*
@@ -105,7 +105,7 @@ window.onload = function() {
 			var img = document.createElement('img');
 			img.width = Math.floor(canvas.width/FIELD_WIDTH);
 			img.height = Math.floor(canvas.height/FIELD_HEIGHT);
-			img.src = "images\\"+game.heroes[selectedHero].units[t].name+'.png';
+			img.src = "images/"+game.heroes[selectedHero].units[t].name+'.png';
 			cvsCtx.drawImage(img, 0, 0, cvs.width, cvs.height);
 			
 			/*
@@ -151,7 +151,7 @@ window.onload = function() {
 		var img = document.createElement('img');
 		img.width = "100";
 		img.height = "100";
-		img.src = "images\\"+game.heroes[selectedHero].name+".png";
+		img.src = "images/"+game.heroes[selectedHero].name+".png";
 		heroTwoImgCtx.drawImage(img, 0, 0, heroTwoImg.width, heroTwoImg.height);
 
 		/*
@@ -192,7 +192,7 @@ window.onload = function() {
 			var img = document.createElement('img');
 			img.width = Math.floor(canvas.width/FIELD_WIDTH);
 			img.height = Math.floor(canvas.height/FIELD_HEIGHT);
-			img.src = "images\\"+game.heroes[selectedHero].units[t].name+'.png';
+			img.src = "images/"+game.heroes[selectedHero].units[t].name+'.png';
 			cvsCtx.drawImage(img, 0, 0, cvs.width, cvs.height);
 			
 			/*
@@ -297,7 +297,7 @@ window.onload = function() {
 			var img = document.createElement('img');
 			img.width = Math.floor(canvas.width/FIELD_WIDTH);
 			img.height = Math.floor(canvas.height/FIELD_HEIGHT);
-			img.src = "images\\"+game.heroes[heroOneSelect.options.selectedIndex-1].units[heroOneUnits[t].unitType].name+".png";
+			img.src = "images/"+game.heroes[heroOneSelect.options.selectedIndex-1].units[heroOneUnits[t].unitType].name+".png";
 			//alert(heroOneUnits[t].x*canvas.width/FIELD_WIDTH+' '+heroOneUnits[t].y*canvas.height/FIELD_HEIGHT);
 			ctx.drawImage(img, heroOneUnits[t].x*canvas.width/FIELD_WIDTH, heroOneUnits[t].y*canvas.height/FIELD_HEIGHT, canvas.width/FIELD_WIDTH, canvas.height/FIELD_HEIGHT);
 		}
@@ -310,7 +310,7 @@ window.onload = function() {
 			var img = document.createElement('img');
 			img.width = Math.floor(canvas.width/FIELD_WIDTH);
 			img.height = Math.floor(canvas.height/FIELD_HEIGHT);
-			img.src = "images\\"+game.heroes[heroTwoSelect.options.selectedIndex-1].units[heroTwoUnits[t].unitType].name+".png";
+			img.src = "images/"+game.heroes[heroTwoSelect.options.selectedIndex-1].units[heroTwoUnits[t].unitType].name+".png";
 			ctx.drawImage(img, heroTwoUnits[t].x*canvas.width/FIELD_WIDTH, heroTwoUnits[t].y*canvas.height/FIELD_HEIGHT, canvas.width/FIELD_WIDTH, canvas.height/FIELD_HEIGHT);
 		}
 
